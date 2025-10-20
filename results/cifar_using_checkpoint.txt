@@ -1,0 +1,31 @@
+(spiralmlp) C:\Users\ADMIN\Desktop\Mora\SpiralMLP>python classification/main.py ^  --model SpiralMLP_B1 ^  --data-set CIFAR ^  --data-path C:\Users\ADMIN\Desktop\Mora\Dataset\cifar ^  --input-size 32 ^  --batch-size 64 ^  --device cuda ^  --eval ^  --resume runs\cifar10_spiral_b1\checkpoint.pth                           
+Not using distributed mode
+Creating model: SpiralMLP_B1
+Unsupported operator aten::add encountered 50 time(s)
+Unsupported operator aten::mean encountered 11 time(s)
+Unsupported operator aten::gelu encountered 20 time(s)
+Unsupported operator aten::softmax encountered 10 time(s)
+Unsupported operator aten::mul encountered 20 time(s)
+Unsupported operator aten::div encountered 20 time(s)
+The following submodules of the model were never called during the trace of the graph. They may be unused, or they were accessed by direct calls to .forward() or via other python methods. In the latter case they will have zeros for statistics, though their statistics will still contribute to their parent calling module. 
+stages.0.0.drop_path, stages.0.1.drop_path, stages.1.0.drop_path, stages.1.1.drop_path, stages.2.0.drop_path, stages.2.1.drop_path, stages.2.2.drop_path, stages.2.3.drop_path, stages.3.0.drop_path, stages.3.1.drop_path
+==============================
+fvcore MAdds: 1.973 G
+Number of parameters: 13.934152 M
+==============================
+AMP not enabled. Training in float32.
+Test:  [  0/105]  eta: 0:01:22  loss: 1.0127 (1.0127)  acc1: 66.6667 (66.6667)  acc5: 100.0000 (100.0000)  time: 0.7867  data: 0.1811  max mem: 1291
+Test:  [ 10/105]  eta: 0:00:33  loss: 1.3490 (1.3447)  acc1: 54.1667 (57.4811)  acc5: 93.7500 (94.1288)  time: 0.3506  data: 0.1246  max mem: 1291
+Test:  [ 20/105]  eta: 0:00:27  loss: 1.1300 (1.1696)  acc1: 64.5833 (61.7560)  acc5: 94.7917 (96.1806)  time: 0.3008  data: 0.1127  max mem: 1291
+Test:  [ 30/105]  eta: 0:00:23  loss: 1.1300 (1.4844)  acc1: 31.2500 (48.9583)  acc5: 94.7917 (93.3132)  time: 0.2902  data: 0.1028  max mem: 1291
+Test:  [ 40/105]  eta: 0:00:19  loss: 1.9077 (1.5813)  acc1: 26.0417 (44.3344)  acc5: 89.5833 (92.8354)  time: 0.2860  data: 0.0989  max mem: 1291
+Test:  [ 50/105]  eta: 0:00:16  loss: 1.7714 (1.5949)  acc1: 35.4167 (44.0359)  acc5: 92.7083 (93.1373)  time: 0.2866  data: 0.0998  max mem: 1291
+Test:  [ 60/105]  eta: 0:00:13  loss: 1.6184 (1.5914)  acc1: 45.8333 (44.8087)  acc5: 94.7917 (93.3914)  time: 0.2871  data: 0.1010  max mem: 1291
+Test:  [ 70/105]  eta: 0:00:10  loss: 1.4265 (1.5301)  acc1: 59.3750 (47.9460)  acc5: 94.7917 (93.6766)  time: 0.2868  data: 0.1002  max mem: 1291
+Test:  [ 80/105]  eta: 0:00:07  loss: 1.2047 (1.4980)  acc1: 66.6667 (49.9228)  acc5: 94.7917 (93.6214)  time: 0.2854  data: 0.0981  max mem: 1291
+Test:  [ 90/105]  eta: 0:00:04  loss: 1.2047 (1.4525)  acc1: 66.6667 (52.0604)  acc5: 95.8333 (93.9560)  time: 0.2852  data: 0.0977  max mem: 1291
+Test:  [100/105]  eta: 0:00:01  loss: 1.0293 (1.4100)  acc1: 67.7083 (53.6201)  acc5: 97.9167 (94.3585)  time: 0.2910  data: 0.1030  max mem: 1291
+Test:  [104/105]  eta: 0:00:00  loss: 1.0205 (1.3891)  acc1: 67.7083 (54.2500)  acc5: 97.9167 (94.4500)  time: 0.2858  data: 0.1026  max mem: 1291
+Test: Total time: 0:00:30 (0.2938 s / it)
+* Acc@1 54.250 Acc@5 94.450 loss 1.389
+Accuracy of the network on the test images: 54.3%
