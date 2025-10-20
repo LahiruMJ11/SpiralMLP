@@ -86,7 +86,8 @@ python test.py configs/retinanet_pvt_s_fpn_1x_coco_640.py checkpoints/retinanet_
 
 **Output:**
 ```
-![image_3c573f](https://github.com/user-attachments/assets/b6f8e72f-9e81-499b-9660-a962fbf37f3e)
+![image_3c573f](https://github.com/user-attachments/assets/60ed0bbf-3bee-4280-b3dc-da507da95ccd)
+
 
 ```
 
