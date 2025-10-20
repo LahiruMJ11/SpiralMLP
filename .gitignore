@@ -1,0 +1,10 @@
+.data/
+result/
+detection/
+semseg/
+runs/
+__pycache__/
+mcloader/
+
+
+
