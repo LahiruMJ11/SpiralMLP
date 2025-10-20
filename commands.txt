@@ -1,0 +1,6 @@
+1. Run this for train the classification model and evaluate using CIFAR dataset
+python classification\main.py --model SpiralMLP_B1 --data-set CIFAR --data-path C:\Users\ADMIN\Desktop\Mora\Dataset\cifar --input-size 32 --batch-size 32 --epochs 10 --num_workers 2 --device cuda --mixup 0 --cutmix 0 --output_dir runs\cifar10_spiral_b1_new
+
+2. Run this for classification using CIFAR dataset checkpoint
+python classification/main.py ^  --model SpiralMLP_B1 ^  --data-set CIFAR ^  --data-path C:\Users\ADMIN\Desktop\Mora\Dataset\cifar ^  --input-size 32 ^  --batch-size 64 ^  --device cuda ^  --eval ^  --resume runs\cifar10_spiral_b1\checkpoint.pth
+
