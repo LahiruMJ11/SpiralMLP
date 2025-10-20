@@ -86,7 +86,8 @@ python test.py configs/retinanet_pvt_s_fpn_1x_coco_640.py checkpoints/retinanet_
 
 **Output:**
 ```
-[Add your output here]
+![image_3c573f](https://github.com/user-attachments/assets/b6f8e72f-9e81-499b-9660-a962fbf37f3e)
+
 ```
 
 ### Mask R-CNN with PVT-v2-B4 Backbone
@@ -100,7 +101,8 @@ python test.py configs/mask_rcnn_pvt_v2_b4_fpn_1x_coco.py checkpoints/mask_rcnn_
 
 **Output:**
 ```
-[Add your output here]
+![image_3c571e](https://github.com/user-attachments/assets/2e7b22fa-5dd3-46ca-bb06-f973cccdc613)
+
 ```
 
 ---
